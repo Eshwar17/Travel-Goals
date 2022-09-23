@@ -1,0 +1,62 @@
+body {
+    /* background: linear-gradient(30deg, rgb(77,77,77), rgb(58.58,58)); */
+    background-color: rgb(161, 154, 154);
+}
+main ul {
+    width: 1200px;
+    margin: 0 auto;
+    /* display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+    margin-bottom: 40px;
+
+}
+
+header {
+    /* override the absolute position in shared css file */
+    position: static;
+}
+main li {
+    /* width: 500px; */
+    display: flex;
+    /* margin: 24px 0; */
+    /* flex-direction: row; */
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    overflow: hidden;
+}
+main li img {
+    height: 280px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.item-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.actions {
+    text-align: right;
+}
+.actions a {
+    text-decoration: none;
+    padding: 6px;
+    color: rgb(22,211,228);
+}
+.actions a:hover {
+    text-decoration: none;
+    padding: 6px;
+    color: black;
+    background-color: rgb(200, 242, 246);;
+}
+li:nth-of-type(3) {
+    width: 1200px;
+    grid-column: 1 / 3;
+}
